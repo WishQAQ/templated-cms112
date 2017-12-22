@@ -1,0 +1,38 @@
+<div class="header">
+  <div class="container">
+    <div class="htop"> <em>{dede:global.cfg_mc/}</em> <span> <a href="javascript:addBookmark()"> 收藏本站</a> 
+    {dede:type typeid='22'}
+    <a href="[field:typelink /]">[field:typename /]</a>
+    {/dede:type}
+     </span> </div>
+    
+    <!--htop-->
+    
+    <div class="hcont">
+      <dl class="dlogo">
+        <dt><a href="/" title="{dede:global.cfg_mc/}"> <img src="/style/images/logo.png" alt="{dede:global.cfg_mc/}" width="161" height="66" /></a></dt>
+        <dd>
+          <h2> <img src="/style/images/tip.png" width="421" height="30" alt=""></h2>
+          <p> 专业为高品质家具提供高质量的<span>油漆涂料产品和方案服务</span></p>
+        </dd>
+      </dl>
+      <dl class="dphone">
+        <dt>全国免费热线</dt>
+        <dd>{dede:global.cfg_dh/}</dd>
+      </dl>
+      <div class="clear"> </div>
+    </div>
+    
+    <!--hcont-->
+    
+    <ul class="nav">
+      <li><a href="/" {dede:field name=typeid runphp="yes"}(@me=="")? @me=" class='cur'":@me="";{/dede:field}>网站首页</a></li>
+      {dede:channel type='top' currentstyle="<li><a href='~typelink~' class='cur'>~typename~</a></li>"}
+      <li ><a href="[field:typelink/]" class="">[field:typename/]</a></li>
+      {/dede:channel}
+    </ul>
+    
+    <!--nav--> 
+    
+  </div>
+</div>

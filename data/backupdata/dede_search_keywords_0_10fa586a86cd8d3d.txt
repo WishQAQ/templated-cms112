@@ -1,0 +1,1 @@
+INSERT INTO `dede_search_keywords` VALUES('1','产品','产品','1','2','1504578927','0','0');

@@ -1,0 +1,1 @@
+<a href="[field:typelink /]">[field:global.cfg_mc/]</a>

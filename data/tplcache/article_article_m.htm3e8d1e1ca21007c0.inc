@@ -1,0 +1,43 @@
+<?php
+$z[0]=Array("field","",626,645);
+$z[0][4]['name']="title";
+$z[1]=Array("global","",646,672);
+$z[1][4]['name']="cfg_webname";
+$z[2]=Array("field","",713,735);
+$z[2][4]['name']="keywords";
+$z[3]=Array("field","",775,826);
+$z[3][4]['name']="description";
+$z[3][4]['function']="html2text(@me)";
+$z[4]=Array("include","",1187,1224);
+$z[4][4]['filename']="head_m.htm";
+$z[5]=Array("field","",1350,1372);
+$z[5][4]['name']="typename";
+$z[6]=Array("channel","\r\n        <li><a href=\"list.php?tid=[field:id/]\">>[field:typename/]</a></li>\r\n        ",1597,1723);
+$z[6][4]['type']="son";
+$z[7]=Array("field","",1840,1859);
+$z[7][4]['name']="title";
+$z[8]=Array("field","",1889,1946);
+$z[8][4]['name']="pubdate";
+$z[8][4]['function']="strftime(\"%Y-%m-%d\",@me)";
+$z[9]=Array("field","",1988,2006);
+$z[9][4]['name']="body";
+$z[10]=Array("global","",2113,2134);
+$z[10][4]['name']="cfg_dh";
+$z[11]=Array("global","",2136,2157);
+$z[11][4]['name']="cfg_dh";
+$z[12]=Array("arclist","\r\n    <li><a href='view.php?aid=[field:id/]'>[field:title/]</a></li>\r\n    ",2205,2342);
+$z[12][4]['row']="5";
+$z[12][4]['titlelen']="60";
+$z[12][4]['typeid']="14";
+$z[13]=Array("global","",2478,2499);
+$z[13][4]['name']="cfg_dh";
+$z[14]=Array("global","",2501,2522);
+$z[14][4]['name']="cfg_dh";
+$z[15]=Array("likeart","\r\n           <a href='view.php?aid=[field:id/]'><img src=\"[field:litpic/]\" alt='[field:title/]' />\r\n            <h5>[field:title/]</h5>\r\n            </a> \r\n            ",2767,2997);
+$z[15][4]['row']="2";
+$z[15][4]['titlelen']="36";
+$z[15][4]['typeid']="1";
+$z[16]=Array("include","",3264,3301);
+$z[16][4]['filename']="foot_m.htm";
+
+?>

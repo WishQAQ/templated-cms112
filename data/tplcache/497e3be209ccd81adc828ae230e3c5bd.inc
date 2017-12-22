@@ -1,0 +1,1 @@
+<div title="[field:title/]" alt="[field:title/]" onclick="window.open('[field:lj/]')" class="bgitem" id="flashbg1" style="background: url('[field:litpic/]') no-repeat scroll center top; height: 500px; width: 100%; cursor: pointer; margin: 0 auto;"> </div>

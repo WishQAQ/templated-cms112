@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0;" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="order by xunmoban.com/" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<link href="css/prlist.css" rel="stylesheet" type="text/css" />
+<link type="text/css" rel="stylesheet" href="css/fontsstyle.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
+{dede:include filename="head_m.htm"/}
+<div class="CategoryList_Title"> <a href="javascript:history.go(-1);"><i class="icon-left fl"></i></a>{dede:field.typename/}
+  <ul  class="CategoryLista"  id='fenl'>
+    <li><a href="#"><i class="icon-details"></i></a>
+      <ul class='list1' style="list-style:none;float: right;position:relative; z-index:99;right: 0%;position:absolute;">
+        {dede:channel type='son'}
+        <li><a href="list.php?tid=[field:id/]">>[field:typename/]</a></li>
+        {/dede:channel}
+      </ul>
+    </li>
+  </ul>
+</div>
+<div class="nyContent">
+  <div class="m-con-2"> 
+  {dede:list pagesize='10' titlelen='50'}
+    <a title="[field:title/]" href="view.php?aid=[field:id/]" class="s-babg">
+    <dl class="prolistbgfa">
+      <h3 class="s-wc"> [field:title/]</h3>
+      <p> [field:description function='cn_substr(@me,120)'/]...</p>
+      <span></span>
+      <div class="clear"> </div>
+    </dl>
+    </a>
+    {/dede:list}
+    <div class="pagess">
+<ul>
+ {dede:pagelist listitem="index,end,pageno" listsize="2"/}
+</ul>
+</div>
+  </div>
+</div>
+{dede:include filename="foot_m.htm"/}
+</body>
+<script type="text/javascript" src="js/prefixfree.min.js"></script>
+<script type="text/javascript" src="js/sdw_mobile.js"></script>
+<script src="js/tools.js"></script>
+</html>

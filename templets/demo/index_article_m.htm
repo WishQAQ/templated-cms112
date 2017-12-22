@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0;" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="order by xunmoban.com/" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery1.js"></script>
+<link href="css/fontsstyle.css" rel="stylesheet" />
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/common.css" rel="stylesheet" />
+<link href="css/prlist.css" rel="stylesheet" />
+</head>
+<body>
+{dede:include filename="head_m.htm"/}
+<!--content:start-->
+<div class="CategoryList_Title"> <a href="javascript:history.go(-1);"><i class="icon-left fl"></i></a>{dede:field.typename/}
+  <ul  class="CategoryLista"  id='fenl'>
+    <li><a href="#"><i class="icon-details"></i></a>
+      <ul class='list1' style="list-style:none;float: right;position:relative; z-index:99;right: 0%;position:absolute;">
+        {dede:channel type='son'}
+        <li><a href="list.php?tid=[field:id/]">>[field:typename/]</a></li>
+        {/dede:channel}
+      </ul>
+    </li>
+  </ul>
+</div>
+<div class="content">
+  <div class="cont_c">
+  {dede:field.content/}
+  </div>
+</div>
+
+{dede:include filename="foot_m.htm"/}
+</body>
+<script type="text/javascript" src="js/sdw_mobile.js"></script>
+<script type="text/javascript" src="js/tools.js"></script>
+</html>
+<script type="text/javascript">
+     $(".cont_c p").css("width", "100%");
+    $(".cont_c img").each(function() {
+        var width = $(this).attr("width");
+        if (width > 300) {
+            //$(this).css("float", "left");
+            $(this).attr("width", "95%");
+        }
+    });
+     $(".cont_c img").each(function() {
+        if ($(this).attr("src").indexOf("/UploadFiles") != -1) {
+            $(this).removeAttr("width");
+            $(this).removeAttr("style");
+            $(this).removeAttr("height");
+        }
+    });
+    $(".cont_c table").each(function() {
+        //        if ($(this).attr("src").indexOf("/UploadFiles") != -1)
+        //        {
+        $(this).removeAttr("width");
+        $(this).css("width", "100%");
+        $(this).css({ display: "block", marginLeft: "auto", marginRight: "auto" })
+        //        
+        //}
+    });
+   $(".cont_c table td").each(function() {
+        $(this).removeAttr("width"); 
+        $(this).removeAttr("style");
+      
+    });
+</script>

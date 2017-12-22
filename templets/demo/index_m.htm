@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="Head1">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0;" />
+<meta content="yes" name="apple-mobile-web-app-capable" />
+<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+<meta content="telephone=no" name="format-detection" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="order by xunmoban.com/" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<link type="text/css" rel="stylesheet" href="css/reset.css" />
+<link type="text/css" rel="stylesheet" href="css/fontsstyle.css" />
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<script src="js/touchslide.1.1.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/prefixfree.min.js"></script>
+</head>
+<body>
+<div class="mian">
+  {dede:include filename="head_m.htm"/}
+  <div class="baner">
+    <div id="focus" class="focus">
+      <div class="hd">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="bd">
+        <div >
+          <ul>
+            {dede:arclist typeid='25'  row='5'  addfields='lj' channelid='17' }
+            <a href="[field:lj/]"><img src="[field:litpic/]" title="" alt="" width="100%"  /></a>
+            {/dede:arclist}
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+    TouchSlide({
+        slideCell: "#focus",
+        titCell: ".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+        mainCell: ".bd ul",
+        effect: "leftLoop",
+        autoPlay: true, //自动播放
+        autoPage: true, //自动分页
+        delayTime:500,
+        interTime:2800
+    });
+</script> 
+  </div>
+  <!-- BANNER_end -->
+  <ul class="nav">
+    <li><a href="index.php">网站首页</a></li>
+    {dede:channel type='top' row='7'}
+    <li><a href="list.php?tid=[field:id/]">[field:typename/]</a></li>
+    {/dede:channel}
+  </ul>
+  <div class="hotPro">
+    <div class="htop" id="product">
+      <ul class="cptab hd">
+        <h5> <span>热销产品</span></h5>
+      </ul>
+      {dede:type typeid='1'}<a href="list.php?tid=[field:id/]"> <img src="images/morimg.png" alt=""></a>{/dede:type} </div>
+    <ul class="pro bd">
+      <ul>
+        {dede:arclist row='4' titlelen='36' typeid='1'}
+        <li><a href="view.php?aid=[field:id/]" title="[field:title/]"> <img src="[field:litpic/]" alt="[field:title/]" /></a>
+          <p> <a href="view.php?aid=[field:id/]" title="[field:title/]"> [field:title/]</a></p>
+        </li>
+        {/dede:arclist}
+      </ul>
+    </ul>
+  </div>
+  <script type="text/javascript">    TouchSlide({ slideCell: "#product" });</script>
+  <div class="youshi">
+    <div class="ytop">
+      <h5> <span>我们的产品</span>掌握核心科技</h5>
+      <p> 三大优势引领行业</p>
+    </div>
+    <div class="ycont">
+      <dl>
+        <dt> <img src="images/ysimg1.png" alt=""></dt>
+        <dd>
+          <h5> 我们的LED灯比普通LED<span>灯亮度提升30%</span></h5>
+          <p> 公司产品采用欧盟标准-碳纳米稀土三基色发光材料360度均匀发光，光纤温和不刺眼投射角度比LED增加50%面积。</p>
+        </dd>
+      </dl>
+      <dl>
+        <dt> <img src="images/ysimg2.png" alt=""></dt>
+        <dd>
+          <h5> 显色指数高，健康<span>无频闪！</span></h5>
+          <p> 我们的LED灯，光线温和不频闪，有效保护视力，是办公、商业最力量的光源选择</p>
+        </dd>
+      </dl>
+      <dl>
+        <dt> <img src="images/ysimg3.png" alt=""></dt>
+        <dd>
+          <h5> <span>使用寿命</span>是普通LED灯的<span>10倍以上！</span></h5>
+          <p> 普通LED灯使用寿命是3000小时，而我们的LED灯长达30000小时。</p>
+        </dd>
+      </dl>
+    </div>
+  </div>
+  <div class="caseMain" id="a">
+    <ul class="list hd">
+      {dede:type typeid='8'}<li> [field:typename /]</li>{/dede:type}
+      {dede:type typeid='13'}<li> [field:typename /]</li>{/dede:type}
+    </ul>
+    <div class="bd" id="tabBox1-bd">
+      <div class="cont">
+        <ul class="case">
+          {dede:arclist row='4' titlelen='36' typeid='8'}
+          <li><a href="view.php?aid=[field:id/]" title="[field:title/]"> <img src="[field:litpic/]" alt="[field:title/]" /></a>
+            <p> <a href="view.php?aid=[field:id/]" title="[field:title/]"> [field:title/]</a></p>
+          </li>
+          {/dede:arclist}
+        </ul>
+      </div>
+      <div class="cont">
+        <ul class="case">
+          {dede:arclist row='4' titlelen='36' typeid='13'}
+          <li><a href="view.php?aid=[field:id/]" title="[field:title/]"> <img src="[field:litpic/]" alt="[field:title/]" /></a>
+            <p> <a href="view.php?aid=[field:id/]" title="[field:title/]"> [field:title/]</a></p>
+          </li>
+          {/dede:arclist}
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    TouchSlide({ slideCell: "#a",
+        
+    });</script>
+  <div class="service" id="yous">
+    <div class="stop">
+      <h5> 商业办公照明一站式服务商</h5>
+      <h4> 专业为商业办公场所提供高质量的LED照明产品和方案服务</h4>
+    </div>
+    <div class="bd">
+      <ul class="scont">
+        <li> <img src="images/sy1.jpg" alt=""></li>
+        <li> <img src="images/sy2.jpg" alt=""></li>
+        <li> <img src="images/sy3.jpg" alt=""></li>
+        <li> <img src="images/sy4.jpg" alt=""></li>
+        <li> <img src="images/sy5.jpg" alt=""></li>
+      </ul>
+    </div>
+    <div class="hd">
+      <ul class="slist">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </div>
+  <script type="text/javascript">
+    //对比
+    //    TouchSlide({ slideCell: "#yous" })
+    TouchSlide({
+        slideCell: "#yous",
+        mainCell: ".bd ul",
+        effect: "leftLoop",
+        autoPlay: true, //自动播放
+        autoPage: false, //自动分页
+        delayTime: 800,
+        interTime: 3500
+    });
+</script>
+  <div class="newsMain" id="b">
+    <ul class="list hd">
+      {dede:type typeid='15'}<li> [field:typename /]</li>{/dede:type}
+      {dede:type typeid='16'}<li> [field:typename /]</li>{/dede:type}
+    </ul>
+    <div class="bd">
+      <ul class="news">
+        {dede:arclist row='4' titlelen='36' typeid='15'}
+        <li><em>[[field:pubdate function='strftime("%Y-%m-%d",@me)'/]]</em> <a href="view.php?aid=[field:id/]" title="[field:title/]"> [field:title/]</a></li>
+        {/dede:arclist}
+      </ul>
+      <ul class="news">
+        {dede:arclist row='4' titlelen='36' typeid='16'}
+        <li><em>[[field:pubdate function='strftime("%Y-%m-%d",@me)'/]]</em> <a href="view.php?aid=[field:id/]" title="[field:title/]"> [field:title/]</a></li>
+        {/dede:arclist}
+      </ul>
+    </div>
+  </div>
+  <script type="text/javascript">
+    TouchSlide({ slideCell: "#b" });
+</script>
+  {dede:include filename="foot_m.htm"/}
+</div>
+<script type="text/javascript" src="js/jquery.js"></script>
+</body>
+</html>

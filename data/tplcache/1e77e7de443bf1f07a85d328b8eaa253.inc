@@ -1,0 +1,1 @@
+<a href="[field:lj/]"><img src="[field:litpic/]" title="" alt="" width="100%"  /></a>

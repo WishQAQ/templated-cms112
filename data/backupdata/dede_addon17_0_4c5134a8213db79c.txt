@@ -1,0 +1,6 @@
+INSERT INTO `dede_addon17` VALUES('13','24','','','127.0.0.1','http://www.xunmoban.com');
+INSERT INTO `dede_addon17` VALUES('14','24','','','127.0.0.1','http://fang.xunmoban.com');
+INSERT INTO `dede_addon17` VALUES('15','24','','','127.0.0.1','http://sc.xunmoban.com');
+INSERT INTO `dede_addon17` VALUES('32','25','','','127.0.0.1','http://www.xunmoban.com');
+INSERT INTO `dede_addon17` VALUES('33','25','','','127.0.0.1','http://fang.xunmoban.com');
+INSERT INTO `dede_addon17` VALUES('34','25','','','127.0.0.1','http://sc.xunmoban.com');

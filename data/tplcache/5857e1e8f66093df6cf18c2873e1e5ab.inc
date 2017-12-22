@@ -1,0 +1,1 @@
+<a href="[field:typelink /]">查看详情</a>

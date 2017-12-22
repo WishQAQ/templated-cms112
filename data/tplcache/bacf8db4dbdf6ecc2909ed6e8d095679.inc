@@ -1,0 +1,1 @@
+<li class=""><a href="[field:imgsrc/]" target="_blank"><img longdesc="[field:imgsrc/]" src="[field:imgsrc/]"></a></li>

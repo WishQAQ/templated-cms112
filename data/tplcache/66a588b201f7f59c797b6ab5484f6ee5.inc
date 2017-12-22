@@ -1,0 +1,1 @@
+<img src='[field:imgsrc/]'  style="width:250px;" />

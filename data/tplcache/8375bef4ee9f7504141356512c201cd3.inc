@@ -1,0 +1,1 @@
+<li><em>[[field:pubdate function='strftime("%Y-%m-%d",@me)'/]]</em> <a href="view.php?aid=[field:id/]" title="[field:title/]"> [field:title/]</a></li>

@@ -1,0 +1,42 @@
+<?php
+$z[0]=Array("field","",372,391);
+$z[0][4]['name']="title";
+$z[1]=Array("global","",392,418);
+$z[1][4]['name']="cfg_webname";
+$z[2]=Array("field","",459,481);
+$z[2][4]['name']="keywords";
+$z[3]=Array("field","",521,572);
+$z[3][4]['name']="description";
+$z[3][4]['function']="html2text(@me)";
+$z[4]=Array("include","",1522,1557);
+$z[4][4]['filename']="head.htm";
+$z[5]=Array("productimagelist","\"[field:imgsrc/]\",",1943,2008);
+$z[6]=Array("field","",2086,2105);
+$z[6][4]['name']="title";
+$z[7]=Array("include","",2432,2467);
+$z[7][4]['filename']="left.htm";
+$z[8]=Array("field","",2538,2560);
+$z[8][4]['name']="typename";
+$z[9]=Array("field","",2609,2631);
+$z[9][4]['name']="position";
+$z[10]=Array("field","\r\n                    <a class=\"jqzoom\" href=\"[field:imgsrc/]\"> <img src=\"[field:imgsrc/]\" alt=\"\" class=\"js_goods_image_url\" style=\"width: 300px;\" /></a>\r\n                    ",3013,3235);
+$z[10][4]['name']="imgurls";
+$z[10][4]['alt']="";
+$z[11]=Array("productimagelist"," \r\n                          <li class=\"\"><a href=\"[field:imgsrc/]\" target=\"_blank\"><img longdesc=\"[field:imgsrc/]\" src=\"[field:imgsrc/]\"></a></li>\r\n                          ",3452,3674);
+$z[12]=Array("field","",4034,4053);
+$z[12][4]['name']="title";
+$z[13]=Array("field","",4155,4180);
+$z[13][4]['name']="description";
+$z[14]=Array("global","",4348,4369);
+$z[14][4]['name']="cfg_dh";
+$z[15]=Array("field","",5507,5525);
+$z[15][4]['name']="body";
+$z[16]=Array("likeart","\r\n                <dl>\r\n                  <dt><a target=\"_blank\" href=\"[field:arcurl/]\"><img src=\"[field:litpic /]\" alt=\"[field:title /]\"></a></dt>\r\n                  <dd class=\"t1\"><a target=\"_blank\" href=\"[field:arcurl/]\">[field:title /]</a></dd>\r\n                </dl>\r\n                ",5768,6108);
+$z[16][4]['row']="4";
+$z[16][4]['titlelen']="36";
+$z[17]=Array("field","",6550,6569);
+$z[17][4]['name']="title";
+$z[18]=Array("include","",8777,8812);
+$z[18][4]['filename']="foot.htm";
+
+?>

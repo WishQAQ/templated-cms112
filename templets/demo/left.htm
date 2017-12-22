@@ -1,0 +1,22 @@
+<div class="soleft">
+  <div class="pro_l">
+    <h4> <a>{dede:field.typeid runphp='yes'}$ID = @me; $sql = "SELECT * FROM `dede_arctype` WHERE id=$ID";$query = mysql_query($sql);$row=mysql_fetch_array($query); $relID = "$row[reid]"; if($relID == 0) {@me = $row[typename];}else{$sql = "SELECT `typename` FROM `dede_arctype` WHERE id=$relID";$query = mysql_query($sql);$row=mysql_fetch_array($query); @me = $row[typename];}{/dede:field.typeid}  </a> </h4>
+    <ul>
+      <li>
+        <div class="sednav">
+          {dede:channel type='son'}
+          <p><a href='[field:typeurl/]' >[field:typename/]</a></p>
+          {/dede:channel}
+        </div>
+      </li>
+    </ul>
+  </div>
+  <h4 class="t05 mt10"> 相关资讯</h4>
+  <div class="t05_cons1">
+    <ul>
+      {dede:arclist row='10' titlelen='40' typeid='14'}
+      <li><a href="[field:arcurl/]" target="_blank" title="[field:title/]">[field:title/]</a></li>
+      {/dede:arclist}
+    </ul>
+  </div>
+</div>
